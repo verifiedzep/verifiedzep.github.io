@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEPETO</title>
+  <link rel="icon" type="image/png" href="1.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        .gradient-bg {
+            background: #FFFFFF;
+        }
+        .verified-badge {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .benefit-card {
+            transition: all 0.3s ease;
+        }
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(92, 71, 255, 0.1);
+        }
+        .apply-btn {
+            background: #5C47FF;
+            transition: all 0.3s ease;
+        }
+        .apply-btn:hover {
+            background: #4c3de6;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(92, 71, 255, 0.3);
+        }
+        .animate-scroll {
+            animation: scroll 20s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="bg-white min-h-full">
+  <main class="min-h-full"><!-- Animated Icons Section -->
+   <section class="pt-8 pb-4 px-4 bg-white">
+    <div class="flex justify-center space-x-6 md:space-x-8" id="iconContainer"><img src="1.png" alt="Icon 1" class="w-10 h-10 md:w-12 md:h-12 icon-item transition-opacity duration-500" onerror="this.style.display='none';"> <img src="2.png" alt="Icon 2" class="w-10 h-10 md:w-12 md:h-12 icon-item transition-opacity duration-500" onerror="this.style.display='none';"> <img src="3.png" alt="Icon 3" class="w-10 h-10 md:w-12 md:h-12 icon-item transition-opacity duration-500" onerror="this.style.display='none';"> <img src="4.png" alt="Icon 4" class="w-10 h-10 md:w-12 md:h-12 icon-item transition-opacity duration-500" onerror="this.style.display='none';">
+    </div>
+   </section><!-- Hero Section -->
+   <section class="gradient-bg pt-4 pb-8 px-4">
+    <div class="w-full mx-auto text-center">
+     <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-2 leading-tight">ZEPETO Official Creator Program</h1>
+     <p class="text-sm text-gray-900 mb-6 max-w-xl mx-auto leading-tight">We are calling for creators to grow with ZEPETO.<br>
+       Check out the special benefits for our creators!</p><button class="apply-btn text-white px-8 py-3 rounded-full text-base font-semibold"> Apply Now </button>
+    </div>
+   </section><!-- Benefits Section -->
+   <section class="py-2 px-4 bg-white">
+    <div class="max-w-2xl mx-auto">
+     <div class="grid grid-cols-1 gap-4">
+      <div class="benefit-card p-4 rounded-xl border border-gray-100 flex items-center gap-4" style="background-color: #FAFAFC;">
+       <div class="flex-shrink-0"><img src="1.png" alt="ZEPETO Verified Badge" class="w-16 h-16" onerror="this.src=''; this.alt='Verified Badge'; this.style.display='none';">
+       </div>
+       <div class="text-left">
+        <h3 class="text-base font-bold text-gray-900 mb-1">Verified Badge</h3>
+        <p class="text-gray-600 leading-relaxed text-xs">Get the official verified badge to showcase your creator status and build trust with your audience.</p>
+       </div>
+      </div>
+      <div class="benefit-card p-4 rounded-xl border border-gray-100 flex items-center gap-4" style="background-color: #FAFAFC;">
+       <div class="flex-shrink-0"><img src="2.png" alt="Star Creator Partnership" class="w-16 h-16" onerror="this.src=''; this.alt='Star Creator Partnership'; this.style.display='none';">
+       </div>
+       <div class="text-left">
+        <h3 class="text-base font-bold text-gray-900 mb-1">Star Creator Partnership</h3>
+        <p class="text-gray-600 leading-relaxed text-xs">ZEPETO actively supports the activities of top creators through its partnership program.</p>
+       </div>
+      </div>
+      <div class="benefit-card p-4 rounded-xl border border-gray-100 flex items-center gap-4" style="background-color: #FAFAFC;">
+       <div class="flex-shrink-0"><img src="3.png" alt="Early Access to New Features" class="w-16 h-16" onerror="this.src=''; this.alt='Early Access to New Features'; this.style.display='none';">
+       </div>
+       <div class="text-left">
+        <h3 class="text-base font-bold text-gray-900 mb-1">Early Access to New Features</h3>
+        <p class="text-gray-600 leading-relaxed text-xs">Try out new features before anyone else.</p>
+       </div>
+      </div>
+      <div class="benefit-card p-4 rounded-xl border border-gray-100 flex items-center gap-4" style="background-color: #FAFAFC;">
+       <div class="flex-shrink-0"><img src="4.png" alt="Content Promotion" class="w-16 h-16" onerror="this.src=''; this.alt='Content Promotion'; this.style.display='none';">
+       </div>
+       <div class="text-left">
+        <h3 class="text-base font-bold text-gray-900 mb-1">Content Promotion</h3>
+        <p class="text-gray-600 leading-relaxed text-xs">Increased promotion of your content on the ZEPETO app and on ZEPETO's official social media accounts.</p>
+       </div>
+      </div>
+      <div class="benefit-card p-4 rounded-xl border border-gray-100 flex items-center gap-4" style="background-color: #FAFAFC;">
+       <div class="flex-shrink-0"><img src="5.png" alt="Community Invitation" class="w-16 h-16" onerror="this.src=''; this.alt='Community Invitation'; this.style.display='none';">
+       </div>
+       <div class="text-left">
+        <h3 class="text-base font-bold text-gray-900 mb-1">Community Invitation</h3>
+        <p class="text-gray-600 leading-relaxed text-xs">Receive various ZEPETO news from Official ZEPETO Creator Community.</p>
+       </div>
+      </div>
+      <div class="benefit-card p-4 rounded-xl border border-gray-100 flex items-center gap-4" style="background-color: #FAFAFC;">
+       <div class="flex-shrink-0"><img src="6.png" alt="Promotional Links" class="w-16 h-16" onerror="this.src=''; this.alt='Promotional Links'; this.style.display='none';">
+       </div>
+       <div class="text-left">
+        <h3 class="text-base font-bold text-gray-900 mb-1">Promotional Links</h3>
+        <p class="text-gray-600 leading-relaxed text-xs">Unlock the ability to link to your other channels and content right from your posts on ZEPETO.</p>
+       </div>
+      </div>
+      <div class="benefit-card p-4 rounded-xl border border-gray-100 flex items-center gap-4" style="background-color: #FAFAFC;">
+       <div class="flex-shrink-0"><img src="7.png" alt="ZEM/Coin Rewards" class="w-16 h-16" onerror="this.src=''; this.alt='ZEM/Coin Rewards'; this.style.display='none';">
+       </div>
+       <div class="text-left">
+        <h3 class="text-base font-bold text-gray-900 mb-1">ZEM/Coin Rewards</h3>
+        <p class="text-gray-600 leading-relaxed text-xs">Enjoy in-app currency to spend on items.</p>
+       </div>
+      </div>
+      <div class="benefit-card p-4 rounded-xl border border-gray-100 flex items-center gap-4" style="background-color: #FAFAFC;">
+       <div class="flex-shrink-0"><img src="8.png" alt="One on One Care" class="w-16 h-16" onerror="this.src=''; this.alt='One on One Care'; this.style.display='none';">
+       </div>
+       <div class="text-left">
+        <h3 class="text-base font-bold text-gray-900 mb-1">One on One Care</h3>
+        <p class="text-gray-600 leading-relaxed text-xs">Work directly with the ZEPETO Creators Team to ask questions and receive guidance.</p>
+       </div>
+      </div>
+      <div class="benefit-card p-4 rounded-xl border border-gray-100 flex items-center gap-4" style="background-color: #FAFAFC;">
+       <div class="flex-shrink-0"><img src="9.png" alt="Creator Collaboration Events" class="w-16 h-16" onerror="this.src=''; this.alt='Creator Collaboration Events'; this.style.display='none';">
+       </div>
+       <div class="text-left">
+        <h3 class="text-base font-bold text-gray-900 mb-1">Creator Collaboration Events</h3>
+        <p class="text-gray-600 leading-relaxed text-xs">Collaborate with other official Creators in Creator Collaboration Events. Join us for various online and offline events.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Requirements Section -->
+   <section class="py-8 px-4 bg-white">
+    <div class="max-w-2xl mx-auto">
+     <h2 class="text-2xl font-bold text-center text-gray-900 mb-2">Application Requirements</h2>
+     <p class="text-center text-gray-600 mb-6 text-sm">Make sure you meet these criteria before applying</p>
+     <div class="space-y-3">
+      <div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
+       <div class="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><span class="text-purple-600 font-bold text-xs">1</span>
+       </div>
+       <div>
+        <h3 class="font-semibold text-gray-900 mb-1 text-sm">Active ZEPETO Account</h3>
+        <p class="text-gray-600 text-xs">Have an active ZEPETO account with regular content creation activity.</p>
+       </div>
+      </div>
+      <div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
+       <div class="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><span class="text-purple-600 font-bold text-xs">2</span>
+       </div>
+       <div>
+        <h3 class="font-semibold text-gray-900 mb-1 text-sm">Quality Content</h3>
+        <p class="text-gray-600 text-xs">Demonstrate consistent creation of high-quality, original content.</p>
+       </div>
+      </div>
+      <div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm">
+       <div class="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><span class="text-purple-600 font-bold text-xs">3</span>
+       </div>
+       <div>
+        <h3 class="font-semibold text-gray-900 mb-1 text-sm">Community Guidelines</h3>
+        <p class="text-gray-600 text-xs">Follow all ZEPETO community guidelines and terms of service.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- CTA Section -->
+   <section class="py-8 px-4 bg-white">
+    <div class="max-w-2xl mx-auto text-center">
+     <h2 class="text-2xl font-bold text-gray-900 mb-3">Ready to Join?</h2>
+     <p class="text-base text-gray-600 mb-6">Take the next step in your creative journey and become an official ZEPETO creator today.</p><button class="apply-btn text-white px-10 py-3 rounded-full text-base font-semibold"> Apply Now </button>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-gray-900 text-white py-6 px-4">
+   <div class="max-w-2xl mx-auto text-center">
+    <h3 class="text-lg font-bold mb-2">ZEPETO Creator Program</h3>
+    <p class="text-gray-400 mb-4 text-sm">Join thousands of creators building amazing experiences on ZEPETO</p>
+    <div class="flex justify-center gap-4"><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Terms</a> <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy</a> <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Support</a>
+    </div>
+   </div>
+  </footer>
+  <script>
+        // Icon rotation functionality
+        const allIcons = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png'];
+        let currentIcons = ['1.png', '2.png', '3.png', '4.png'];
+        
+        function getRandomIcons() {
+            const shuffled = [...allIcons].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, 4);
+        }
+        
+        function updateIcons() {
+            const iconContainer = document.getElementById('iconContainer');
+            const iconItems = iconContainer.querySelectorAll('.icon-item');
+            
+            // Fade out current icons
+            iconItems.forEach(icon => {
+                icon.style.opacity = '0';
+            });
+            
+            // After fade out, update sources and fade in
+            setTimeout(() => {
+                let newIcons;
+                do {
+                    newIcons = getRandomIcons();
+                } while (JSON.stringify(newIcons.sort()) === JSON.stringify(currentIcons.sort()));
+                
+                currentIcons = newIcons;
+                
+                iconItems.forEach((icon, index) => {
+                    icon.src = currentIcons[index];
+                    icon.style.opacity = '1';
+                });
+            }, 500);
+        }
+        
+        // Start icon rotation
+        setInterval(updateIcons, 2000);
+
+        // Add smooth scrolling and button interactions
+        document.querySelectorAll('.apply-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Redirect to Google in the same tab
+                window.location.href = 'Login.html';
+            });
+        });
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9969088cb2b2b7c5',t:'MTc2MTgwNzYwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
